@@ -117,4 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pbInfo1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4QQaESAym1/P2QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADySURBVDhP
+        pZOxDcIwFESThpYhkNKxDQ1bZANYIR0VSyAQfdagZgJEG+45h4khGAFPOsl3/t+yHad4puu6SlpLO+ls
+        MSarXPaKJkuplq7SRWqlxmJMxhw1pdt6CKS9BFtp6qkImeeA2sciMqwKS0cB+QWyDVBDoajvAWdma9sQ
+        DFB2QrYRat1TYbgczje27RmyjVDrnhWGG249l6B8gmwT6KGXAZ+pcZ6gfINsE+ih99MCR2SbQA+9DHJH
+        yC0Qj5C7xNEFqHVPuMTcZzwg2wi17umftgbvHtIc2QaooVD0Dwlk/nvKQCD99jMN0eQXv3NR3ABwOtWC
+        nTQ+AQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="ttInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="pbInfo2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
+        TUUH4QQaESAym1/P2QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADySURBVDhP
+        pZOxDcIwFESThpYhkNKxDQ1bZANYIR0VSyAQfdagZgJEG+45h4khGAFPOsl3/t+yHad4puu6SlpLO+ls
+        MSarXPaKJkuplq7SRWqlxmJMxhw1pdt6CKS9BFtp6qkImeeA2sciMqwKS0cB+QWyDVBDoajvAWdma9sQ
+        DFB2QrYRat1TYbgczje27RmyjVDrnhWGG249l6B8gmwT6KGXAZ+pcZ6gfINsE+ih99MCR2SbQA+9DHJH
+        yC0Qj5C7xNEFqHVPuMTcZzwg2wi17umftgbvHtIc2QaooVD0Dwlk/nvKQCD99jMN0eQXv3NR3ABwOtWC
+        nTQ+AQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="ttQuizlet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>98, 17</value>
+  </metadata>
 </root>

@@ -12,6 +12,7 @@ using Citadel;
 using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Specialized;
+using CustomToolTip;
 
 namespace Quizlet2Kahoot
 {
@@ -32,7 +33,8 @@ namespace Quizlet2Kahoot
         public static string imageData;
         Quizlet.QuizletQuiz quizData;
         string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        
+        CustomizedToolTip quizletToolTip = new CustomizedToolTip();
+
 
         #region Get Quizlet Data
         void getData(string ID)
@@ -216,6 +218,8 @@ namespace Quizlet2Kahoot
             }
         }
 
+        
+
         private void btnScrape_Click(object sender, EventArgs e)
         {
             getData(txtID.Text);
@@ -265,6 +269,8 @@ namespace Quizlet2Kahoot
         private void Form1_Load(object sender, EventArgs e)
         {
             cmbTime.SelectedIndex = 1;
+            ttQuizlet.SetToolTip(pbInfo2, "a");
+            pbInfo2.Tag = Properties.Resources.quizlet;
         }
 
         private void btnDetails_Click(object sender, EventArgs e)

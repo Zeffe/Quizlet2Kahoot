@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.thirteenForm1 = new Xenon.ThirteenForm();
             this.label15 = new System.Windows.Forms.Label();
             this.thirteenTabControl1 = new Xenon.ThirteenTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pbInfo1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtLoggedIn = new Xenon.ThirteenTextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -70,11 +73,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtTitle2 = new Xenon.ThirteenTextBox();
             this.thirteenControlBox1 = new Xenon.ThirteenControlBox();
+            this.ttInfo = new System.Windows.Forms.ToolTip(this.components);
+            this.pbInfo2 = new System.Windows.Forms.PictureBox();
+            this.ttQuizlet = new CustomToolTip.CustomizedToolTip();
             this.thirteenForm1.SuspendLayout();
             this.thirteenTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo2)).BeginInit();
             this.SuspendLayout();
             // 
             // thirteenForm1
@@ -121,6 +129,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.tabPage1.Controls.Add(this.pbInfo1);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.txtLoggedIn);
             this.tabPage1.Controls.Add(this.label5);
@@ -138,7 +147,17 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(439, 163);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Login";
+            this.tabPage1.Text = "Kahoot Login";
+            // 
+            // pbInfo1
+            // 
+            this.pbInfo1.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo1.Image")));
+            this.pbInfo1.Location = new System.Drawing.Point(169, 14);
+            this.pbInfo1.Name = "pbInfo1";
+            this.pbInfo1.Size = new System.Drawing.Size(16, 16);
+            this.pbInfo1.TabIndex = 12;
+            this.pbInfo1.TabStop = false;
+            this.ttInfo.SetToolTip(this.pbInfo1, "Log in with your GetKahoot.com credentials.");
             // 
             // label6
             // 
@@ -276,6 +295,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.tabPage2.Controls.Add(this.pbInfo2);
             this.tabPage2.Controls.Add(this.btnDetails);
             this.tabPage2.Controls.Add(this.btnFlip);
             this.tabPage2.Controls.Add(this.btnRemove);
@@ -604,6 +624,22 @@
             this.thirteenControlBox1.TabIndex = 0;
             this.thirteenControlBox1.Text = "thirteenControlBox1";
             // 
+            // pbInfo2
+            // 
+            this.pbInfo2.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo2.Image")));
+            this.pbInfo2.Location = new System.Drawing.Point(163, 46);
+            this.pbInfo2.Name = "pbInfo2";
+            this.pbInfo2.Size = new System.Drawing.Size(16, 16);
+            this.pbInfo2.TabIndex = 16;
+            this.pbInfo2.TabStop = false;
+            // 
+            // ttQuizlet
+            // 
+            this.ttQuizlet.AutoSize = false;
+            this.ttQuizlet.BorderColor = System.Drawing.Color.Red;
+            this.ttQuizlet.OwnerDraw = true;
+            this.ttQuizlet.Size = new System.Drawing.Size(200, 60);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -619,10 +655,12 @@
             this.thirteenTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -671,6 +709,10 @@
         private Xenon.ThirteenComboBox cmbTime;
         private Xenon.ThirteenButton btnDetails;
         private Xenon.ThirteenCheckBox chkImages;
+        private System.Windows.Forms.PictureBox pbInfo1;
+        private System.Windows.Forms.ToolTip ttInfo;
+        private System.Windows.Forms.PictureBox pbInfo2;
+        private CustomToolTip.CustomizedToolTip ttQuizlet;
     }
 }
 
