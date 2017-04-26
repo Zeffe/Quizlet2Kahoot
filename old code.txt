@@ -1,0 +1,34 @@
+string questions = "[";
+
+            for (int i = 0; i < nmQuestions.Value; i++)
+            {
+                questions += questionConstructor(i);
+                if (i != nmQuestions.Value - 1) questions += ",";
+            }
+            //questions = questions.Substring(0, questions.Length - 1) + "]";
+            questions += "]";
+
+            Dictionary<string, string> tempData = new Dictionary<string, string>();
+            tempData.Add("audience", "School");
+            tempData.Add("resources", "");
+            tempData.Add("created", null); // CHECK HERE LATER IF ERROR
+            tempData.Add("introVideo", "");
+            tempData.Add("visibility", "1");
+            tempData.Add("title", txtTitle.Text);
+            tempData.Add("language", "English");
+            tempData.Add("uuid", null); // CHECK HERE LATER IF ERROR
+            tempData.Add("description", txtTitle.Text + " automatically generated from quizlet.");
+            tempData.Add("questions", questions); adding = true;
+            tempData.Add("quizType", "quiz");
+            tempData.Add("type", "quiz");
+            try
+            {
+                sendPost("https://create.kahoot.it/rest/kahoots", tempData);
+                msgbox msg = new msgbox("Successfully created kahoot.", "Success", 1);
+                msg.Show();
+                btnCreate.Enabled = false;
+            } catch
+            {
+                msgbox msg = new msgbox("Error creating kahoot, try decreasing the amount of questions or restarting the program.", "Error", 1);
+                msg.Show();
+            }
