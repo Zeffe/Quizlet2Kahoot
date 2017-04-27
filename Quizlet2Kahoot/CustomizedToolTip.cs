@@ -1,3 +1,4 @@
+
 /*[ Compilation unit ----------------------------------------------------------
 
    Component       : ToolTip With Image
@@ -330,7 +331,7 @@ namespace CustomToolTip
                 Image toolTipImage = parent.Tag as Image;
                 if (toolTipImage != null)
                 {
-                    myImageRectangle.Width = myInternalImageWidth;
+                    myImageRectangle.Width = toolTipImage.Width;
                     myTextRectangle = new Rectangle(myImageRectangle.Right, myImageRectangle.Top,
                         (myToolTipRectangle.Width - myImageRectangle.Right - BORDER_THICKNESS), myImageRectangle.Height);
                     myTextRectangle.Location = new Point(myImageRectangle.Right, myImageRectangle.Top);

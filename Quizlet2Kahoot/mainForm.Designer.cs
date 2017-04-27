@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtUser = new Xenon.ThirteenTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pbInfo2 = new System.Windows.Forms.PictureBox();
             this.btnDetails = new Xenon.ThirteenButton();
             this.btnFlip = new Xenon.ThirteenButton();
             this.btnRemove = new Xenon.ThirteenButton();
@@ -74,15 +75,14 @@
             this.txtTitle2 = new Xenon.ThirteenTextBox();
             this.thirteenControlBox1 = new Xenon.ThirteenControlBox();
             this.ttInfo = new System.Windows.Forms.ToolTip(this.components);
-            this.pbInfo2 = new System.Windows.Forms.PictureBox();
             this.ttQuizlet = new CustomToolTip.CustomizedToolTip();
             this.thirteenForm1.SuspendLayout();
             this.thirteenTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // thirteenForm1
@@ -312,6 +312,15 @@
             this.tabPage2.Size = new System.Drawing.Size(439, 163);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Get Quizlet Data";
+            // 
+            // pbInfo2
+            // 
+            this.pbInfo2.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo2.Image")));
+            this.pbInfo2.Location = new System.Drawing.Point(163, 46);
+            this.pbInfo2.Name = "pbInfo2";
+            this.pbInfo2.Size = new System.Drawing.Size(16, 16);
+            this.pbInfo2.TabIndex = 16;
+            this.pbInfo2.TabStop = false;
             // 
             // btnDetails
             // 
@@ -624,21 +633,12 @@
             this.thirteenControlBox1.TabIndex = 0;
             this.thirteenControlBox1.Text = "thirteenControlBox1";
             // 
-            // pbInfo2
-            // 
-            this.pbInfo2.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo2.Image")));
-            this.pbInfo2.Location = new System.Drawing.Point(163, 46);
-            this.pbInfo2.Name = "pbInfo2";
-            this.pbInfo2.Size = new System.Drawing.Size(16, 16);
-            this.pbInfo2.TabIndex = 16;
-            this.pbInfo2.TabStop = false;
-            // 
             // ttQuizlet
             // 
             this.ttQuizlet.AutoSize = false;
-            this.ttQuizlet.BorderColor = System.Drawing.Color.Red;
+            this.ttQuizlet.BorderColor = System.Drawing.Color.Black;
             this.ttQuizlet.OwnerDraw = true;
-            this.ttQuizlet.Size = new System.Drawing.Size(200, 60);
+            this.ttQuizlet.Size = new System.Drawing.Size(424, 35);
             // 
             // mainForm
             // 
@@ -658,9 +658,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInfo2)).EndInit();
             this.ResumeLayout(false);
 
         }

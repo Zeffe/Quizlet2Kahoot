@@ -270,6 +270,7 @@ namespace Quizlet2Kahoot
         {
             cmbTime.SelectedIndex = 1;
             ttQuizlet.SetToolTip(pbInfo2, "a");
+            //ttQuizlet.AutoSize
             pbInfo2.Tag = Properties.Resources.quizlet;
         }
 
