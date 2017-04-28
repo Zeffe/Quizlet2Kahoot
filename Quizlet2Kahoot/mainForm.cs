@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Specialized;
 using CustomToolTip;
+using Newtonsoft.Json.Linq;
 
 namespace Quizlet2Kahoot
 {
@@ -34,6 +35,7 @@ namespace Quizlet2Kahoot
         Quizlet.QuizletQuiz quizData;
         string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         CustomizedToolTip quizletToolTip = new CustomizedToolTip();
+        string uuid = "";
 
 
         #region Get Quizlet Data
@@ -95,6 +97,12 @@ namespace Quizlet2Kahoot
                 }
 
                 response = client.UploadString(url, json);
+
+                if (response.Contains("\"uuid\""))
+                {
+                    JObject obj = JObject.Parse(response);
+                    uuid = (string)obj["uuid"];
+                }
 
                 if (response.Contains("access_token"))
                 {
@@ -174,6 +182,8 @@ namespace Quizlet2Kahoot
                 postJson("https://create.kahoot.it/rest/kahoots", json);
                 msgbox msg = new msgbox("Successfully created kahoot.", "Success", 1);
                 msg.Show();
+                txtLink.Text = "https://create.kahoot.it/#quiz/" + uuid;
+                txtLink2.Text = "https://play.kahoot.it/#/?quizId=" + uuid;
                 quiz = new Kahoot.KahootQuiz();
                 quizData = new Quizlet.QuizletQuiz();
                 listQuestions.Items.Clear();
@@ -270,7 +280,6 @@ namespace Quizlet2Kahoot
         {
             cmbTime.SelectedIndex = 1;
             ttQuizlet.SetToolTip(pbInfo2, "a");
-            //ttQuizlet.AutoSize
             pbInfo2.Tag = Properties.Resources.quizlet;
         }
 
@@ -281,6 +290,20 @@ namespace Quizlet2Kahoot
                 msgbox msg = new msgbox("Question: " + terms[listQuestions.SelectedIndex].definition + "\n\nAnswer: " + terms[listQuestions.SelectedIndex].term, "Question " + (listQuestions.SelectedIndex + 1).ToString(), 1);
                 msg.Show();
             }
+        }
+
+        private void btnCopy1_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(txtLink.Text);
+            msgbox msg = new msgbox("Copied to clipboard!", "Copied", 1);
+            msg.Show();
+        }
+
+        private void btnCopy2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(txtLink2.Text);
+            msgbox msg = new msgbox("Copied to clipboard!", "Copied", 1);
+            msg.Show();
         }
     }
 }

@@ -63,11 +63,6 @@
             this.chkImages = new Xenon.ThirteenCheckBox();
             this.cmbTime = new Xenon.ThirteenComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btnExit = new Xenon.ThirteenButton();
             this.label14 = new System.Windows.Forms.Label();
             this.btnCreate = new Xenon.ThirteenButton();
             this.label13 = new System.Windows.Forms.Label();
@@ -75,6 +70,11 @@
             this.txtTitle2 = new Xenon.ThirteenTextBox();
             this.thirteenControlBox1 = new Xenon.ThirteenControlBox();
             this.ttInfo = new System.Windows.Forms.ToolTip(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtLink = new Xenon.ThirteenTextBox();
+            this.txtLink2 = new Xenon.ThirteenTextBox();
+            this.btnCopy1 = new Xenon.ThirteenButton();
+            this.btnCopy2 = new Xenon.ThirteenButton();
             this.ttQuizlet = new CustomToolTip.CustomizedToolTip();
             this.thirteenForm1.SuspendLayout();
             this.thirteenTabControl1.SuspendLayout();
@@ -446,14 +446,14 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.tabPage3.Controls.Add(this.btnCopy2);
+            this.tabPage3.Controls.Add(this.btnCopy1);
+            this.tabPage3.Controls.Add(this.txtLink2);
+            this.tabPage3.Controls.Add(this.txtLink);
+            this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.chkImages);
             this.tabPage3.Controls.Add(this.cmbTime);
             this.tabPage3.Controls.Add(this.label20);
-            this.tabPage3.Controls.Add(this.label19);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.btnExit);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.btnCreate);
             this.tabPage3.Controls.Add(this.label13);
@@ -509,61 +509,6 @@
             this.label20.Size = new System.Drawing.Size(142, 16);
             this.label20.TabIndex = 25;
             this.label20.Text = "Seconds Per Question";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label19.Location = new System.Drawing.Point(301, 83);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 20);
-            this.label19.TabIndex = 23;
-            this.label19.Text = "Kahoot";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label18.Location = new System.Drawing.Point(322, 62);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(18, 20);
-            this.label18.TabIndex = 22;
-            this.label18.Text = "2";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label17.Location = new System.Drawing.Point(301, 41);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 20);
-            this.label17.TabIndex = 21;
-            this.label17.Text = "Quizlet";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label16.Location = new System.Drawing.Point(254, 19);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(159, 20);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Thank You For Using";
-            // 
-            // btnExit
-            // 
-            this.btnExit.AccentColor = System.Drawing.Color.DodgerBlue;
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnExit.ColorScheme = Xenon.ThirteenButton.ColorSchemes.Dark;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(296, 125);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(73, 23);
-            this.btnExit.TabIndex = 19;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label14
             // 
@@ -633,6 +578,72 @@
             this.thirteenControlBox1.TabIndex = 0;
             this.thirteenControlBox1.Text = "thirteenControlBox1";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
+            this.label12.Location = new System.Drawing.Point(234, 5);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(74, 20);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Quiz Link";
+            // 
+            // txtLink
+            // 
+            this.txtLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.txtLink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLink.ColorScheme = Xenon.ThirteenTextBox.ColorSchemes.Dark;
+            this.txtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtLink.ForeColor = System.Drawing.Color.White;
+            this.txtLink.Location = new System.Drawing.Point(234, 36);
+            this.txtLink.Name = "txtLink";
+            this.txtLink.ReadOnly = true;
+            this.txtLink.Size = new System.Drawing.Size(196, 22);
+            this.txtLink.TabIndex = 29;
+            // 
+            // txtLink2
+            // 
+            this.txtLink2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.txtLink2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLink2.ColorScheme = Xenon.ThirteenTextBox.ColorSchemes.Dark;
+            this.txtLink2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtLink2.ForeColor = System.Drawing.Color.White;
+            this.txtLink2.Location = new System.Drawing.Point(234, 106);
+            this.txtLink2.Name = "txtLink2";
+            this.txtLink2.ReadOnly = true;
+            this.txtLink2.Size = new System.Drawing.Size(196, 22);
+            this.txtLink2.TabIndex = 30;
+            // 
+            // btnCopy1
+            // 
+            this.btnCopy1.AccentColor = System.Drawing.Color.DodgerBlue;
+            this.btnCopy1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCopy1.ColorScheme = Xenon.ThirteenButton.ColorSchemes.Dark;
+            this.btnCopy1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnCopy1.ForeColor = System.Drawing.Color.White;
+            this.btnCopy1.Location = new System.Drawing.Point(299, 64);
+            this.btnCopy1.Name = "btnCopy1";
+            this.btnCopy1.Size = new System.Drawing.Size(63, 20);
+            this.btnCopy1.TabIndex = 31;
+            this.btnCopy1.Text = "Copy";
+            this.btnCopy1.UseVisualStyleBackColor = false;
+            this.btnCopy1.Click += new System.EventHandler(this.btnCopy1_Click);
+            // 
+            // btnCopy2
+            // 
+            this.btnCopy2.AccentColor = System.Drawing.Color.DodgerBlue;
+            this.btnCopy2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCopy2.ColorScheme = Xenon.ThirteenButton.ColorSchemes.Dark;
+            this.btnCopy2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.btnCopy2.ForeColor = System.Drawing.Color.White;
+            this.btnCopy2.Location = new System.Drawing.Point(299, 134);
+            this.btnCopy2.Name = "btnCopy2";
+            this.btnCopy2.Size = new System.Drawing.Size(63, 20);
+            this.btnCopy2.TabIndex = 32;
+            this.btnCopy2.Text = "Copy";
+            this.btnCopy2.UseVisualStyleBackColor = false;
+            this.btnCopy2.Click += new System.EventHandler(this.btnCopy2_Click);
+            // 
             // ttQuizlet
             // 
             this.ttQuizlet.AutoSize = false;
@@ -697,12 +708,7 @@
         private Xenon.ThirteenButton btnCreate;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private Xenon.ThirteenButton btnExit;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label20;
         private Xenon.ThirteenButton btnFlip;
         private Xenon.ThirteenButton btnRemove;
@@ -713,6 +719,11 @@
         private System.Windows.Forms.ToolTip ttInfo;
         private System.Windows.Forms.PictureBox pbInfo2;
         private CustomToolTip.CustomizedToolTip ttQuizlet;
+        private Xenon.ThirteenTextBox txtLink;
+        private System.Windows.Forms.Label label12;
+        private Xenon.ThirteenTextBox txtLink2;
+        private Xenon.ThirteenButton btnCopy2;
+        private Xenon.ThirteenButton btnCopy1;
     }
 }
 
