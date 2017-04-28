@@ -25,17 +25,19 @@ namespace Quizlet2Kahoot
         }
 
 
-        List<Quizlet.QuizletTerm> terms = new List<Quizlet.QuizletTerm>();
-        Random rng = new Random();
-        bool loggedIn = false; bool scraped = false;
+        string uuid = "";                                       // Generates the link for created quizes.
+        bool loggedIn = false;                                  
+        bool scraped = false;
         bool adding = false;
-        string authToken;
-        Kahoot.KahootQuiz quiz = new Kahoot.KahootQuiz();
-        public static string imageData;
-        Quizlet.QuizletQuiz quizData;
+        public static string imageData;                         // Gets response from Kahoot media server for image uploads.
+        string authToken;                                       // Used for authentication when logging in.
+        Kahoot.KahootQuiz quiz = new Kahoot.KahootQuiz();       // The final quiz object.
+        Random rng = new Random();
+        Quizlet.QuizletQuiz quizData;                           // Holds quizlet data.
         string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        CustomizedToolTip quizletToolTip = new CustomizedToolTip();
-        string uuid = "";
+        CustomizedToolTip quizletToolTip = new CustomizedToolTip();             // Custom image tool tip.
+        List<Quizlet.QuizletTerm> terms = new List<Quizlet.QuizletTerm>();      // List of all quizlet terms.
+        
 
 
         #region Get Quizlet Data
@@ -294,16 +296,22 @@ namespace Quizlet2Kahoot
 
         private void btnCopy1_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtLink.Text);
-            msgbox msg = new msgbox("Copied to clipboard!", "Copied", 1);
-            msg.Show();
+            if (txtLink.Text != "")
+            {
+                Clipboard.SetText(txtLink.Text);
+                msgbox msg = new msgbox("Copied to clipboard!", "Copied", 1);
+                msg.Show();
+            }
         }
 
         private void btnCopy2_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtLink2.Text);
-            msgbox msg = new msgbox("Copied to clipboard!", "Copied", 1);
-            msg.Show();
+            if (txtLink2.Text != "")
+            {
+                Clipboard.SetText(txtLink2.Text);
+                msgbox msg = new msgbox("Copied to clipboard!", "Copied", 1);
+                msg.Show();
+            }
         }
     }
 }

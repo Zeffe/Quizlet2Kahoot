@@ -47,3 +47,15 @@ C:\Users\Seth\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Quizlet2Kahoot.exe
 C:\Users\Seth\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Quizlet2Kahoot.pdb
 C:\Users\Seth\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Seth\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Quizlet2Kahoot.exe.config
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Quizlet2Kahoot.exe
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Quizlet2Kahoot.pdb
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Quizlet2Kahoot.exe
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Quizlet2Kahoot.pdb
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Quizlet2Kahoot.csprojResolveAssemblyReference.cache
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Quizlet2Kahoot.mainForm.resources
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Citadel.msgbox.resources
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Quizlet2Kahoot.Properties.Resources.resources
+C:\Users\5654920324\Desktop\quizlet2kahoot\Quizlet2Kahoot\obj\Debug\Quizlet2Kahoot.csproj.GenerateResource.Cache
